@@ -25,6 +25,15 @@ const loggerLogin = LoggerUtil('%c[Login]', 'color: #000668; font-weight: bold')
 
 
 /**
+ * Script for login.ejs
+ * Switches render to forgot password page
+ * 
+ */
+document.getElementById('forgotPassword').addEventListener('click', e => {
+    switchView(VIEWS.login, VIEWS.forgot)
+})
+
+/**
  * Show a login error.
  * 
  * @param {HTMLElement} element The element on which to display the error.
